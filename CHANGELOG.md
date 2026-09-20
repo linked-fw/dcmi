@@ -1,5 +1,11 @@
 # @\_linked/dcmi
 
+## 1.1.2
+
+### Patch Changes
+
+- [#10](https://github.com/linked-fw/dcmi/pull/10) [`f09fa94`](https://github.com/linked-fw/dcmi/commit/f09fa944828a952e6b932efe3f02a69f7dbfa07c) Thanks [@flyon](https://github.com/flyon)! - Declare npm as the package manager for this repo, convert the build scripts off `yarn`, and mark `package-lock.json` as a generated file.
+
 ## 1.1.0
 
 ### Minor Changes
