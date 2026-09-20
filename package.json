@@ -2,6 +2,7 @@
   "name": "@_linked/dcmi",
   "license": "UNLICENSED",
   "version": "1.1.1",
+  "packageManager": "npm@11.19.1",
   "linkedPackage": true,
   "type": "module",
   "author": {
@@ -13,9 +14,9 @@
   "description": "This module is an up-to-date specification of all metadata terms maintained by the Dublin Core Metadata Initiative, including properties, vocabulary encoding schemes, syntax encoding schemes, and classes.",
   "scripts": {
     "start": "npm exec linked dev",
-    "build": "rimraf ./lib && yarn build-esm && yarn copy-to-lib",
-    "build-esm": "echo \"compiling ESM\" && rimraf ./lib/esm && (yarn tsc -p tsconfig-esm.json || echo 'tsc returned non-zero; .js still emitted via noEmitOnError default')",
-    "copy-to-lib": "echo 'copying JSON assets to lib folder' && yarn copyfiles -u 1 'src/**/*.json' lib/esm"
+    "build": "rimraf ./lib && npm run build-esm && npm run copy-to-lib",
+    "build-esm": "echo \"compiling ESM\" && rimraf ./lib/esm && (tsc -p tsconfig-esm.json || echo 'tsc returned non-zero; .js still emitted via noEmitOnError default')",
+    "copy-to-lib": "echo 'copying JSON assets to lib folder' && copyfiles -u 1 'src/**/*.json' lib/esm"
   },
   "types": "./lib/esm/index.d.ts",
   "dependencies": {
