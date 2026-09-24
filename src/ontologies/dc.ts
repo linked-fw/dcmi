@@ -1,7 +1,5 @@
 import { Prefix } from '@_linked/core/utils/Prefix';
 import { createNameSpace } from '@_linked/core/utils/NameSpace';
-import { linkedOntology } from '../package.js';
-import * as _this from './dc.js';
 
 const dataFile = '../data/dcelems.json';
 export const loadData = () => {
@@ -51,4 +49,3 @@ export const dcelems = {
   type,
 };
 
-linkedOntology(_this, ns, 'dc', loadData, dataFile);
