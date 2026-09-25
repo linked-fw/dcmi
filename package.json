@@ -21,7 +21,7 @@
   },
   "types": "index.d.ts",
   "dependencies": {
-    "@_linked/core": "^2.21.0",
+    "@_linked/core": "^2.22.8",
     "@_linked/xsd": "^1.0"
   },
   "devDependencies": {
