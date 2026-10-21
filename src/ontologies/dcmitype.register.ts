@@ -11,7 +11,7 @@
  * From a sibling module the same import is ordinary and survives.
  */
 import * as terms from './dcmitype.js';
-import {loadData, ns} from './dcmitype.js';
+import {dataFiles, loadData, ns} from './dcmitype.js';
 import {linkedOntology} from '../package.js';
 
-linkedOntology(terms, ns, 'dcmitype', loadData, '../data/dcmitype.json');
+linkedOntology(terms, ns, 'dcmitype', loadData, dataFiles);

@@ -22,4 +22,10 @@ export const {
   getPackageShape,
   packageExports,
   packageName,
-} = linkedPackage('@_linked/dcmi');
+} = linkedPackage('@_linked/dcmi', {
+  mirrors: [
+    'http://purl.org/dc/elements/1.1/',
+    'http://purl.org/dc/dcmitype/',
+    'http://purl.org/dc/terms/',
+  ],
+});
