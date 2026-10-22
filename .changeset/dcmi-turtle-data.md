@@ -1,5 +1,5 @@
 ---
-'@_linked/dcmi': major
+'@_linked/dcmi': minor
 ---
 
 The ontology data ships as Turtle and the package holds only DCMI's terms.
