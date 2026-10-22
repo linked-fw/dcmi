@@ -1,13 +1,12 @@
 import { Prefix } from '@_linked/core/utils/Prefix';
 import { createNameSpace } from '@_linked/core/utils/NameSpace';
+import { loadOntologyFiles } from '@_linked/core/ontology/loadOntologyFiles';
 
-const dataFile = '../data/dcterms.json';
-export const loadData = () => {
-  //@ts-ignore
-  return import('../data/dcterms.json', { with: { type: 'json' } }).then(
-    (data) => data.default
-  );
-};
+/** The package's ontology data, relative to this module (Turtle, copied into `lib/` by the build). */
+export const dataFiles = ['../data/dcterms.ttl'];
+
+/** Reads the package's ontology data (server only). */
+export const loadData = () => loadOntologyFiles(import.meta.url, dataFiles);
 
 const base = 'http://purl.org/dc/terms/';
 export const ns = createNameSpace(base);
@@ -91,7 +90,6 @@ export const temporal = ns('temporal');
 export const title = ns('title');
 export const type = ns('type');
 export const valid = ns('valid');
-export const Image = ns('Image');
 
 export const dcterms = {
   _ontologyResource,
@@ -172,6 +170,5 @@ export const dcterms = {
   RightsStatement,
   SizeOrDuration,
   Standard,
-  Image,
 };
 

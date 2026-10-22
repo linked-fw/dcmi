@@ -1,13 +1,12 @@
 import { Prefix } from '@_linked/core/utils/Prefix';
 import { createNameSpace } from '@_linked/core/utils/NameSpace';
+import { loadOntologyFiles } from '@_linked/core/ontology/loadOntologyFiles';
 
-const dataFile = '../data/dcmitype.json';
-export const loadData = () => {
-  //@ts-ignore
-  return import('../data/dcmitype.json', { with: { type: 'json' } }).then(
-    (data) => data.default
-  );
-};
+/** The package's ontology data, relative to this module (Turtle, copied into `lib/` by the build). */
+export const dataFiles = ['../data/dcmitype.ttl'];
+
+/** Reads the package's ontology data (server only). */
+export const loadData = () => loadOntologyFiles(import.meta.url, dataFiles);
 
 const base = 'http://purl.org/dc/dcmitype/';
 export const ns = createNameSpace(base);

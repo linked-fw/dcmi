@@ -11,7 +11,7 @@
  * From a sibling module the same import is ordinary and survives.
  */
 import * as terms from './dcterms.js';
-import {loadData, ns} from './dcterms.js';
+import {dataFiles, loadData, ns} from './dcterms.js';
 import {linkedOntology} from '../package.js';
 
-linkedOntology(terms, ns, 'dcterms', loadData, '../data/dcterms.json');
+linkedOntology(terms, ns, 'dcterms', loadData, dataFiles);
