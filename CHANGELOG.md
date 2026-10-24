@@ -1,5 +1,11 @@
 # @\_linked/dcmi
 
+## 1.4.1
+
+### Patch Changes
+
+- [#46](https://github.com/linked-fw/dcmi/pull/46) [`5237714`](https://github.com/linked-fw/dcmi/commit/52377142500ccc1f7589453cf7dff0e4c3dac162) Thanks [@flyon](https://github.com/flyon)! - Ships `lib/esm/data/shapes.ttl`; core range raised.
+
 ## 1.4.0
 
 ### Minor Changes
