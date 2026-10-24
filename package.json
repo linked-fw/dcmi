@@ -47,7 +47,7 @@
   "types": "index.d.ts",
   "dependencies": {
     "@_linked/core": "^2.41.0",
-    "@_linked/xsd": "^1.4.0"
+    "@_linked/xsd": "^1.4.1"
   },
   "devDependencies": {
     "@_linked/cli": "^1.57.0",

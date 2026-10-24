@@ -1,4 +1,4 @@
-import { xsd } from '@_linked/core/ontologies/xsd';
+import * as xsd from '@_linked/xsd/ontologies/xsd';
 import { Shape } from '@_linked/core/shapes/Shape';
 import { literalProperty, objectProperty } from '@_linked/core/shapes/SHACL';
 import type { NodeReferenceValue } from '@_linked/core/utils/NodeReference';
