@@ -2,8 +2,8 @@ import { xsd } from '@_linked/core/ontologies/xsd';
 import { Shape } from '@_linked/core/shapes/Shape';
 import { literalProperty, objectProperty } from '@_linked/core/shapes/SHACL';
 import type { NodeReferenceValue } from '@_linked/core/utils/NodeReference';
-import { dcmitype } from '../ontologies/dcmitype.js';
-import { dcterms } from '../ontologies/dcterms.js';
+import * as dcmitype from '../ontologies/dcmitype.js';
+import * as dcterms from '../ontologies/dcterms.js';
 import { linkedShape } from '../package.js';
 
 @linkedShape
