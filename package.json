@@ -12,14 +12,23 @@
     "dc": {
       "namespace": "http://purl.org/dc/elements/1.1/",
       "data": [
-        "dcelems.ttl"
+        "dcelems.ttl",
+        "dc-added.ttl"
       ]
     },
     "dcterms": {
-      "namespace": "http://purl.org/dc/terms/"
+      "namespace": "http://purl.org/dc/terms/",
+      "data": [
+        "dcterms.ttl",
+        "dcterms-added.ttl"
+      ]
     },
     "dcmitype": {
-      "namespace": "http://purl.org/dc/dcmitype/"
+      "namespace": "http://purl.org/dc/dcmitype/",
+      "data": [
+        "dcmitype.ttl",
+        "dcmitype-added.ttl"
+      ]
     }
   },
   "type": "module",
