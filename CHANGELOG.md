@@ -1,5 +1,11 @@
 # @\_linked/dcmi
 
+## 1.6.1
+
+### Patch Changes
+
+- [#52](https://github.com/linked-fw/dcmi/pull/52) [`96c7eb2`](https://github.com/linked-fw/dcmi/commit/96c7eb2c0550c835e2637977ab244444e4cb9f35) Thanks [@flyon](https://github.com/flyon)! - `Image` takes its `xsd` datatypes from `@_linked/xsd/ontologies/xsd` (the vocabulary package) instead of core's internal `@_linked/core/ontologies/xsd` module. `@_linked/xsd` range raised to ^1.4.1.
+
 ## 1.6.0
 
 ### Minor Changes
