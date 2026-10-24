@@ -8,6 +8,20 @@
   "version": "1.4.1",
   "packageManager": "npm@12.2.0",
   "linkedPackage": true,
+  "linkedOntologies": {
+    "dc": {
+      "namespace": "http://purl.org/dc/elements/1.1/",
+      "data": [
+        "dcelems.ttl"
+      ]
+    },
+    "dcterms": {
+      "namespace": "http://purl.org/dc/terms/"
+    },
+    "dcmitype": {
+      "namespace": "http://purl.org/dc/dcmitype/"
+    }
+  },
   "type": "module",
   "author": {
     "name": "Valentine Wilson",
@@ -23,11 +37,11 @@
   },
   "types": "index.d.ts",
   "dependencies": {
-    "@_linked/core": "^2.39.1",
-    "@_linked/xsd": "^1.3.2"
+    "@_linked/core": "^2.41.0",
+    "@_linked/xsd": "^1.4.0"
   },
   "devDependencies": {
-    "@_linked/cli": "^1.56.0",
+    "@_linked/cli": "^1.57.0",
     "@changesets/changelog-github": "^1.0.0",
     "@changesets/cli": "^3.0.0",
     "@types/node": "^24.19.1",
