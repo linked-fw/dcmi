@@ -1,0 +1,12 @@
+# What the published DCMI file lacks: the ontology entity. Only metadata; never a new term
+# (see README §The data).
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://purl.org/dc/elements/1.1/>
+    a owl:Ontology ;
+    dcterms:source <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_elements.ttl> ;
+    owl:versionInfo "DCMI Metadata Terms, 2020-01-20" ;
+    vann:preferredNamespacePrefix "dc" ;
+    vann:preferredNamespaceUri "http://purl.org/dc/elements/1.1/" .
