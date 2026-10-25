@@ -1,5 +1,11 @@
 # @\_linked/dcmi
 
+## 1.6.3
+
+### Patch Changes
+
+- [#56](https://github.com/linked-fw/dcmi/pull/56) [`584cc7f`](https://github.com/linked-fw/dcmi/commit/584cc7fd0a8a9db7e40deaf0a3f07cbd5643edee) Thanks [@flyon](https://github.com/flyon)! - License: MIT (data under its original license)
+
 ## 1.6.2
 
 ### Patch Changes
