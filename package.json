@@ -7,7 +7,7 @@
     "LICENSE",
     "NOTICE"
   ],
-  "version": "1.6.2",
+  "version": "1.6.3",
   "packageManager": "npm@12.2.0",
   "linkedPackage": true,
   "linkedOntologies": {
