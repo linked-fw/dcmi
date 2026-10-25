@@ -1,9 +1,11 @@
 {
   "name": "@_linked/dcmi",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "files": [
     "lib",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTICE"
   ],
   "version": "1.6.1",
   "packageManager": "npm@12.2.0",
