@@ -1,6 +1,6 @@
 {
   "name": "@_linked/dcmi",
-  "license": "MIT",
+  "license": "MIT AND CC-BY-4.0",
   "files": [
     "lib",
     "CHANGELOG.md",
