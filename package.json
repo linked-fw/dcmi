@@ -9,7 +9,9 @@
   ],
   "version": "1.6.3",
   "packageManager": "npm@12.2.0",
-  "linkedPackage": true,
+  "linked": {
+    "kind": "ontology"
+  },
   "linkedOntologies": {
     "dc": {
       "namespace": "http://purl.org/dc/elements/1.1/",
