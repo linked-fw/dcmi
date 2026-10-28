@@ -1,5 +1,11 @@
 # @\_linked/dcmi
 
+## 1.6.4
+
+### Patch Changes
+
+- [#61](https://github.com/linked-fw/dcmi/pull/61) [`6fa85c2`](https://github.com/linked-fw/dcmi/commit/6fa85c230739698bc82bd80fd423e807a3498da3) Thanks [@flyon](https://github.com/flyon)! - `package.json` says what this package is in `"linked": {"kind": "ontology"}` instead of `"linkedPackage": true`, which the CLI and server no longer read.
+
 ## 1.6.3
 
 ### Patch Changes
