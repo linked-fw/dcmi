@@ -50,8 +50,8 @@
   },
   "types": "index.d.ts",
   "dependencies": {
-    "@_linked/core": "^2.41.0",
-    "@_linked/xsd": "^1.4.1"
+    "@_linked/core": "^3.0.0",
+    "@_linked/xsd": "^2.0.0"
   },
   "devDependencies": {
     "@_linked/cli": "^1.57.0",
