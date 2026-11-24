@@ -20,8 +20,9 @@ import * as dcterms from '@_linked/dcmi/ontologies/dcterms';
 @literalProperty({path: dcterms.title}) get title(): string {…}
 ```
 
-Each module has one named export per term; `ontologies/<prefix>.data` holds `ns`, `dataFiles`,
-`_ontologyResource` and `loadData()`. A term's export name is its local name made an identifier
+Each module has one named export per term, an `{id}` with the term's full IRI. `ontologies/index` registers all three with their data and suggested prefix; the package entry and
+`shapes/index` import it. The package registers no prefix: an app lists the prefixes it uses in
+its own prefix map. Where code needs a namespace function, core's `createNameSpace('http://purl.org/dc/terms/')` gives one. A term's export name is its local name made an identifier
 (`dcterms:ISO639-2` → `dcterms.ISO639_2`). `linked generate-ontology` writes the modules from the
 data (`package.json` `"linkedOntologies"`), and `linked build` fails when they are stale; never
 edit them by hand.
